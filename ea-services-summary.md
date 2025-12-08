@@ -1,7 +1,7 @@
 # Enterprise Architecture Services
 ## Your Strategic Partner for Technology-Enabled Success
 
-**Version**: 1.0
+**Version**: 1.1
 **Date**: 2025-12-08
 **For**: Business Partners, Leaders, and Initiative Sponsors
 
@@ -88,6 +88,7 @@ We give you transparency into your technology portfolio and investment performan
 | **Architecture Review Board** | Formal governance reviews of solutions | Protect investments, ensure quality, validate alignment with enterprise direction |
 | **Design Assurance** | Proactive architectural guidance | Get early design help, faster approvals, avoid costly mistakes |
 | **Architecture Standards** | Enterprise technology standards and patterns | Faster delivery with proven patterns, reduced risk, interoperability |
+| **Solution Architecture for Major Initiatives** | Dedicated architect for complex efforts | End-to-end design ownership, expert guidance through implementation, ensure success of strategic initiatives |
 
 ### Portfolio Strategy Office Services
 
@@ -131,8 +132,9 @@ We give you transparency into your technology portfolio and investment performan
 - Reference architectures and patterns
 - Integration guidance
 - Pre-approval readiness assessment
+- Dedicated solution architect for major initiatives
 
-**Services:** TA-03, TA-04
+**Services:** TA-03, TA-04, TA-05
 
 ---
 
@@ -227,6 +229,9 @@ Submit ARB request: [Insert ARB Portal Link]
 ### 🔄 **Reuse & Leverage**
 "EA connected us with another team who had already solved a similar integration challenge. We reused their pattern, saving 3 months of design time and avoiding the same pitfalls they encountered."
 
+### 🎯 **Strategic Initiative Success**
+"Our $5M ERP implementation had a dedicated solution architect embedded full-time. They designed the end-to-end architecture, guided our implementation partner, and ensured we made sound technical decisions. The solution went live on-time with zero production issues."
+
 ### 📊 **Portfolio Visibility**
 "The portfolio dashboard gave our executive team real-time visibility into all technology investments. For the first time, we could see the full picture and make informed trade-off decisions during quarterly reviews."
 
@@ -241,13 +246,13 @@ No—when you engage EA early, we actually **accelerate** your initiative by hel
 No—we exist to **enable** your success, not create barriers. Our governance processes protect your investment and ensure quality, while our advisory services provide practical help when you need it.
 
 ### What if my initiative is urgent?
-We offer **expedited review processes** for urgent needs (3-5 days). We also provide embedded architects for high-priority strategic initiatives to ensure you have architectural support when you need it most.
+We offer **expedited review processes** for urgent needs (3-5 days). We also provide embedded architects for high-priority strategic initiatives (via TA-05 Solution Architecture service) to ensure you have dedicated architectural support when you need it most.
 
 ### Do I have to follow EA standards?
 Standards exist to reduce risk, enable interoperability, and accelerate delivery. We have an **exception process** for justified deviations. The key is understanding the trade-offs and making informed decisions.
 
 ### How do I know if I need EA services?
-**Simple rule:** If you're planning a technology investment over $250K, launching a new initiative, introducing new technology, or making architectural decisions, engage EA. When in doubt, reach out—we'll help you determine the right level of engagement.
+**Simple rule:** If you're planning a technology investment over $250K, launching a new initiative, introducing new technology, or making architectural decisions, engage EA. For initiatives over $1M or strategic importance, you'll likely need a dedicated solution architect (TA-05). When in doubt, reach out—we'll help you determine the right level of engagement.
 
 ### What's the difference between Business Architecture and Technology Architecture?
 - **Business Architecture** focuses on **what** the business does (capabilities, value streams, stakeholders)—independent of technology
@@ -307,6 +312,7 @@ Enterprise Architecture is here to help you succeed. Whether you're planning a s
 | TA-02 | Architecture Review Board | Risk mitigation | Major technology decisions, governance approval |
 | TA-03 | Design Assurance & Advisory | Quality designs | Solution design, early guidance |
 | TA-04 | Architecture Standards & Governance | Consistency & interoperability | Technology selection, standards compliance |
+| TA-05 | Solution Architecture for Major Initiatives | End-to-end design ownership | Large/complex/strategic initiatives ($1M+) |
 | **Portfolio Strategy Office** | | | |
 | PSO-01 | Demand Intake & Assessment | Fair evaluation | New technology requests, idea submission |
 | PSO-02 | Capital Planning | Investment optimization | Budget planning, capital allocation |
@@ -319,6 +325,7 @@ Enterprise Architecture is here to help you succeed. Whether you're planning a s
 **Document Owner**: Enterprise Architecture Leadership
 **Questions or Feedback**: [Insert Contact Information]
 **Last Updated**: 2025-12-08
+**Version**: 1.1 (Added TA-05 Solution Architecture for Major Initiatives)
 
 ---
 

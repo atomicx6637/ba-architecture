@@ -133,3 +133,47 @@ To empower teams with autonomy while ensuring strategic investment in the contin
     *   Celebrate and publicize early wins, such as a team successfully managing its own enhancements or a Tier 1 project getting funded through the new process.
     *   Share the portfolio dashboards widely to make the benefits of transparency tangible to everyone.
     *   Establish a simple feedback mechanism (e.g., a dedicated Teams channel) to gather input on the process and make iterative improvements, demonstrating that this is an evolving system.
+
+---
+
+## 5. Demand Tier Scenario Workflows
+
+This section provides practical, narrative-based examples for each demand tier to illustrate how the governance process looks and feels to the stakeholders involved.
+
+### Break-Fix Scenario
+*   **Example Project:** A critical database server supporting the customer information system fails, making the application inaccessible to call center agents.
+*   **Stakeholder Workflow & Experience:**
+    *   **The User (Call Center Agent):** Experiences an application error. They report it immediately through the designated help desk channel. Their experience is one of urgency and waiting for a resolution.
+    *   **IT Operations/On-Call Team:** An automated alert is triggered, and a high-priority incident ticket is created in the system (e.g., ServiceNow). The on-call team is paged and immediately begins diagnosis and remediation. The entire process is managed within the incident management system.
+    *   **The Experience:** There is no "demand" or "project" paperwork. The process is one of **autonomy and urgency**. The goal is immediate service restoration, and the work is tracked via an operational ticket, not a demand record. Funding comes from the operational expenditure (OpEx) budget.
+
+### Enhancement Scenario
+*   **Example Project:** The Regulated Billing team wants to add a new "Notes" field to an internal dashboard they use to track complex billing inquiries, allowing them to better document the context of each case.
+*   **Stakeholder Workflow & Experience:**
+    *   **The User (Billing Analyst):** Mentions the idea to their manager during a team meeting, explaining how it would save time and reduce errors.
+    *   **The Team Lead:** Recognizes the value and simplicity of the request. They confirm with their technical liaison that this is a small change (e.g., less than 40 hours of work).
+    *   **The Experience:** The Team Lead fills out a simplified, one-page demand form. Since the cost is well under the $50k threshold, they approve it directly using their **pre-allocated annual enhancement budget**. The request is added to their team-level Kanban board and prioritized against other small enhancements. The central governance bodies (Subcommittee, TAC) are not involved, providing a **lightweight and autonomous** experience.
+
+### Tier 3 Scenario
+*   **Example Project:** The Fleet Management department wants to purchase and implement a new GPS tracking and telematics system for their vehicle fleet to optimize routes and monitor vehicle health. The total cost is estimated at $225,000.
+*   **Stakeholder Workflow & Experience:**
+    *   **The Sponsor (Fleet Manager):** Works with a business analyst to complete the standard demand record and business case. They detail the expected benefits, including fuel savings, improved maintenance scheduling, and increased driver safety, projecting an ROI within two years.
+    *   **Enterprise Architecture (EA):** During the `Screening` stage, an architect quickly reviews the proposal. They confirm the solution doesn't conflict with other enterprise systems and that the data integration plan is sound. They confirm it is correctly tiered as Tier 3.
+    *   **Technology Subcommittee:** The Fleet Manager presents the business case to the committee. The committee members (representing various business units) review the case, ask clarifying questions about the ROI calculation, and confirm it aligns with the broader corporate goal of "Operational Excellence." They agree it's a solid, well-defined project and prioritize it highly on their recommended funding list.
+    *   **Technology Advisory Committee (TAC):** The project appears on the consent agenda recommended by the Subcommittee. Seeing the clear ROI and the Subcommittee's endorsement, the **TAC provides final funding approval** with minimal debate. The experience is one of **standardized review and justification**.
+
+### Tier 2 Scenario
+*   **Example Project:** Upgrade the core middleware platform that connects the CRM and Billing systems. The platform is approaching its end-of-life, creating performance and security risks. The total project cost is estimated at $1.2 million.
+*   **Stakeholder Workflow & Experience:**
+    *   **The Sponsor (IT Platform Owner):** Develops a comprehensive demand record that focuses heavily on risk mitigation, technical debt reduction, and ensuring future business continuity. The business case is less about new features and more about preventing future problems.
+    *   **Enterprise Architecture (EA):** Conducts a **formal architectural review**. They create diagrams showing the numerous upstream and downstream systems that will be impacted by the upgrade. They identify that this will require coordinated testing from the Customer Service, Billing, and Marketing teams. Due to this high level of cross-portfolio dependency, they confirm its Tier 2 classification.
+    *   **Technology Subcommittee:** The review is more extensive. The IT Platform Owner presents, but representatives from the affected business units are also present. They discuss the proposed project timeline and negotiate a testing and deployment schedule that minimizes disruption to their critical business operations. The Subcommittee debates the urgency of this technical project versus a revenue-generating business project, ultimately agreeing that the risk of platform failure is too high to ignore. They recommend it for funding.
+    *   **Technology Advisory Committee (TAC):** The IT Platform Owner and the Lead Enterprise Architect co-present the project. The TAC members, including senior VPs, ask pointed questions about the business continuity plan during the upgrade and the specific security vulnerabilities being addressed. Convinced of the strategic necessity of this foundational investment, they **approve the funding**. The experience is one of **formal, cross-functional alignment and risk-based decision-making**.
+
+### Tier 1 Scenario
+*   **Example Project:** A multi-year, enterprise-wide program to implement a "Unified Customer Experience" platform. This involves replacing the legacy residential and commercial CRM systems with a single, modern platform and building a new customer-facing portal. The total program cost is projected to be over $15 million.
+*   **Stakeholder Workflow & Experience:**
+    *   **The Sponsor (VP of Customer Experience):** This initiative is born directly from the company's annual strategic plan. The sponsor, along with a dedicated team of senior leaders, develops a detailed program charter and business case that articulates a transformational vision for customer interaction.
+    *   **Enterprise Architecture (EA):** Is a core part of the program planning team from the very beginning. They work with the sponsor to define the future-state business capabilities and create the high-level technology roadmap that will enable the vision.
+    *   **Technology Subcommittee:** The program is presented to the Subcommittee for awareness and to understand its significant impact on all other portfolio planning. The Subcommittee's role is not to question the strategic decision but to review the plan for readiness and identify major dependencies and resource constraints that need to be communicated to the TAC. They confirm its strategic priority.
+    *   **Technology Advisory Committee (TAC):** The presentation is a major event on the TAC's agenda. The **Business Sponsor (VP) presents the strategic vision** and the expected transformation in customer satisfaction and operational efficiency. The EA presents the multi-year architectural roadmap. The CFO discusses the capital funding strategy. The debate is not about "if," but "how." The TAC, composed of C-level executives, makes the final **strategic investment decision**, approving the program and chartering it with the authority to move forward. The experience is one of **top-down, strategy-driven, executive-level decision-making**.

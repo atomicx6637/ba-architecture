@@ -22,7 +22,7 @@ Our services are designed to **enable and accelerate** business objectives—not
 
 ## Enterprise Architecture Service Portfolio Overview
 
-The EA function delivers **12 services** across **3 integrated domains** that work together to enable strategy-to-execution alignment:
+The EA function delivers **13 services** across **3 integrated domains** that work together to enable strategy-to-execution alignment:
 
 ```mermaid
 graph TB
@@ -45,11 +45,13 @@ graph TB
         TA02["TA-02: Architecture Review<br/>Board Services"]
         TA03["TA-03: Design Assurance &<br/>Architecture Advisory"]
         TA04["TA-04: Architecture Standards<br/>& Governance"]
+        TA05["TA-05: Solution Architecture<br/>for Major Initiatives"]
 
         TA_TITLE --> TA01
         TA_TITLE --> TA02
         TA_TITLE --> TA03
         TA_TITLE --> TA04
+        TA_TITLE --> TA05
     end
 
     subgraph PSO[" "]
@@ -75,7 +77,7 @@ graph TB
 
     class BA_TITLE,TA_TITLE,PSO_TITLE titleStyle
     class BA01,BA02,BA03 baStyle
-    class TA01,TA02,TA03,TA04 taStyle
+    class TA01,TA02,TA03,TA04,TA05 taStyle
     class PSO01,PSO02,PSO03,PSO04,PSO05 psoStyle
 ```
 
@@ -133,6 +135,9 @@ graph LR
 
 **Need architectural approval?**
 → TA-02 (Architecture Review Board), TA-04 (Standards & Governance)
+
+**Leading a major/complex initiative?**
+→ TA-05 (Solution Architecture for Major Initiatives)
 
 **Want portfolio visibility?**
 → PSO-03 (SPM Platform), PSO-04 (Portfolio Performance), PSO-05 (Portfolio Advisory)
@@ -699,6 +704,157 @@ The Technology Architecture domain provides services that define, manage, and go
 
 ---
 
+### TA-05: Solution Architecture for Major Initiatives
+
+**Service Owner**: Enterprise Architecture Team / Chief Architect
+
+**Purpose**: Provide dedicated, hands-on solution architecture expertise for large-scale, complex, or strategic initiatives, ensuring end-to-end architectural design and successful implementation.
+
+**Value Delivered**:
+- **Deep Expertise**: Dedicated architect with solution design ownership throughout initiative lifecycle
+- **End-to-End Design**: Comprehensive solution architecture across all layers (business, application, data, infrastructure, integration, security)
+- **Implementation Success**: Architecture remains viable from design through deployment and operations
+- **Risk Mitigation**: Continuous architectural oversight identifies and resolves issues in real-time
+- **Team Augmentation**: Fills capability gaps when internal teams lack specialized architectural expertise
+- **Knowledge Transfer**: Builds solution architecture capability within delivery teams
+
+**Primary Customers**:
+- Strategic Initiative Sponsors (transformation programs, major investments)
+- Program/Project Managers (large, complex initiatives)
+- Business Unit Leaders (critical business capabilities)
+- IT Leadership (enterprise-wide technology initiatives)
+- Vendors and Implementation Partners (major system implementations)
+
+**Key Activities**:
+- Lead end-to-end solution architecture design and documentation
+- Define solution architecture vision and roadmap for multi-phase initiatives
+- Design detailed architecture across all domains (application, data, integration, infrastructure, security)
+- Create solution architecture blueprints, models, and specifications
+- Lead technical design sessions and architecture workshops
+- Evaluate and recommend technology products and platforms
+- Design integration patterns and data flows across systems
+- Define non-functional requirements (performance, scalability, security, resilience)
+- Conduct proof-of-concepts and technical validation
+- Provide architecture guidance to development teams during implementation
+- Review detailed designs and code architecture for alignment
+- Support testing strategy, deployment planning, and operational readiness
+- Ensure traceability from business requirements to technical implementation
+- Prepare and present architecture artifacts for ARB review
+- Document as-built architecture and lessons learned
+
+**When Solution Architecture is Required**:
+- **Capital threshold**: Initiatives exceeding $1M+ in technology investment
+- **Strategic importance**: CEO/Board-level visibility or enterprise transformation programs
+- **Technical complexity**: Multiple system integrations, new technology platforms, complex data migrations
+- **Organizational impact**: Cross-functional initiatives affecting multiple business units
+- **Regulatory/compliance**: Critical systems subject to regulatory oversight or audit
+- **Vendor implementations**: Major ERP, CRM, or enterprise platform implementations
+- **Innovation initiatives**: First-of-kind solutions using emerging technologies
+- **Architectural precedent**: Solutions that establish new patterns for enterprise adoption
+
+**Solution Architecture Engagement Model**:
+
+1. **Full-Time Embedded** (Strategic/Complex Initiatives)
+   - Dedicated solution architect assigned full-time to initiative
+   - Duration: Typically 6-18 months through design and implementation
+   - Scope: Owns solution architecture from concept to production
+   - Examples: ERP implementation, enterprise data platform, digital transformation program
+
+2. **Part-Time Allocated** (Major Initiatives)
+   - Solution architect allocated 50% time to initiative
+   - Duration: 3-12 months through critical phases
+   - Scope: Leads architecture design, periodic implementation oversight
+   - Examples: Major application modernization, cloud migration, system consolidation
+
+3. **Phase-Based** (Multi-Year Programs)
+   - Solution architect engaged for specific phases/releases
+   - Duration: 2-6 months per phase
+   - Scope: Design for phase, handoff to delivery team, return for next phase
+   - Examples: Multi-year capability buildout, phased legacy modernization
+
+**Inputs**:
+- Business case and strategic objectives
+- Business requirements and user stories
+- Current state architecture and technology landscape
+- Integration requirements and system inventory
+- Non-functional requirements and constraints
+- Technology roadmaps and enterprise standards (from TA-01, TA-04)
+- Capability models and value stream maps (from BA-01, BA-02)
+- Vendor product evaluations and RFP responses
+- Budget and timeline constraints
+- Regulatory and compliance requirements
+
+**Outputs**:
+- **Solution Architecture Vision**: High-level architecture approach and guiding principles
+- **Solution Architecture Blueprint**: Comprehensive architecture across all layers
+  - Business architecture (capabilities, processes, information)
+  - Application architecture (systems, components, services)
+  - Data architecture (data models, flows, governance)
+  - Integration architecture (interfaces, APIs, middleware)
+  - Infrastructure architecture (cloud, network, compute, storage)
+  - Security architecture (authentication, authorization, encryption, compliance)
+- **Architecture Decision Records (ADRs)**: Documented decisions with rationale and trade-offs
+- **Technology Stack Recommendations**: Specific products, platforms, and tools
+- **Integration Specifications**: Detailed interface designs and data exchange formats
+- **Data Migration Strategy**: Approach for legacy data transformation and cutover
+- **Non-Functional Requirements**: Performance, scalability, availability, security targets
+- **Deployment Architecture**: Production, DR, and environment topology
+- **Operational Support Model**: Monitoring, support, and maintenance approach
+- **Architecture Artifacts for ARB**: Presentation materials and supporting documentation
+- **Implementation Guidance**: Design patterns, code structure, development standards
+- **As-Built Architecture Documentation**: Final architecture with deviations and lessons learned
+
+**Service Levels**:
+- Solution architect assignment: 2-3 weeks from request (subject to capacity)
+- Initial architecture assessment: 1-2 weeks after assignment
+- High-level architecture design: 3-6 weeks
+- Detailed architecture design: 6-12 weeks (varies by complexity)
+- Ongoing support: Responsive to initiative needs, typically weekly touchpoints
+- Architecture artifact delivery: Per agreed initiative schedule
+
+**Solution Architect Qualifications**:
+- 10+ years technology experience, 5+ years solution architecture experience
+- Domain expertise relevant to initiative (e.g., ERP, data platforms, cloud, integration)
+- Proven track record delivering complex solutions in production
+- Strong technical depth across multiple technology domains
+- Business acumen and ability to translate business needs to technical solutions
+- Excellent communication and stakeholder management skills
+- Relevant certifications (TOGAF, cloud platforms, enterprise platforms)
+
+**How to Engage**:
+- Submit request via EA intake specifying initiative scope and complexity
+- Include business case, timeline, and budget information
+- Contact Chief Architect for pre-assessment of solution architecture needs
+- For strategic initiatives, engage during business case development to plan for solution architect assignment
+
+**Success Criteria for Solution Architecture Engagement**:
+- Solution delivered on-time and on-budget
+- Architecture approved by ARB with minimal conditions
+- Non-functional requirements met (performance, security, scalability)
+- Production deployment successful with no major architectural issues
+- Solution is maintainable, supportable, and evolvable
+- Technical debt minimized or managed with clear remediation plan
+- Development team capable of sustaining solution post-launch
+- Lessons learned captured and shared with EA community
+
+**Integration with Other EA Services**:
+- **With TA-03 (Design Assurance)**: TA-03 provides advisory; TA-05 provides hands-on design ownership
+- **With TA-02 (ARB)**: Solution architects prepare comprehensive ARB submissions and present solutions
+- **With TA-01 (Roadmap Management)**: Solutions align with technology roadmaps; new patterns inform roadmap evolution
+- **With TA-04 (Standards & Governance)**: Solution architects apply and extend enterprise standards
+- **With BA-03 (BA Advisory)**: Collaborates on business-to-technology alignment
+- **With PSO-04 (Portfolio Performance)**: Solution quality impacts initiative success metrics
+
+**Transition and Sustainment**:
+- Solution architect works with delivery team to transfer knowledge
+- Architecture documentation delivered for operational teams
+- Support model defined for post-production issues
+- Technical debt inventory with prioritized remediation plan
+- Periodic architecture health checks (3, 6, 12 months post-launch)
+- Solution architect available for consultation post-launch (limited basis)
+
+---
+
 ## Service Domain 3: Portfolio Strategy Office
 
 The Portfolio Strategy Office domain provides services that optimize technology and business investments, ensure strategic alignment, and provide transparency into demand, portfolio health, and capital deployment. These services enable executive leadership to make informed investment decisions.
@@ -1090,6 +1246,7 @@ This service catalog is a living document. We actively seek feedback on:
 | TA-02 | Architecture Review Board (ARB) Services | Risk mitigation & standards compliance | Solution Architects, Project Sponsors, IT Leadership | Governance + Review |
 | TA-03 | Design Assurance & Architecture Advisory | Early guidance & quality designs | Solution Architects, Project Teams, Vendors | Consultative + Embedded |
 | TA-04 | Architecture Standards & Governance | Consistency & interoperability | Solution Architects, IT Leadership, Dev Teams | Self-service + Governance |
+| TA-05 | Solution Architecture for Major Initiatives | End-to-end design ownership | Strategic Initiative Sponsors, Program Managers | Fully Embedded |
 | PSO-01 | Strategic Demand Intake & Assessment | Visibility & fair evaluation | BU Leaders, Exec Leadership, IT, PMO | Self-service + Consultative |
 | PSO-02 | Technology Capital Planning | Investment optimization & predictability | Exec Leadership, Finance, BU Leaders, IT | Consultative |
 | PSO-03 | SPM Platform Ownership | Single source of truth & efficiency | Exec Leadership, PMO, Finance, EA | Self-service + Support |
@@ -1098,11 +1255,12 @@ This service catalog is a living document. We actively seek feedback on:
 
 ---
 
-**Document Version**: 1.3
+**Document Version**: 1.4
 **Last Updated**: 2025-12-08
 **Owner**: Enterprise Architecture Leadership
 **Review Cycle**: Annual (Q4)
 **Version History**:
+- v1.4 (2025-12-08): Added TA-05 Solution Architecture for Major Initiatives service
 - v1.3 (2025-12-08): Added visual service portfolio overview with Mermaid diagrams and Quick Service Finder
 - v1.2 (2025-12-08): Added TA-02 Architecture Review Board, TA-03 Design Assurance & Architecture Advisory, and TA-04 Architecture Standards & Governance services
 - v1.1 (2025-12-08): Added Technology Architecture domain and TA-01 Technology Roadmap Management & Ownership service
