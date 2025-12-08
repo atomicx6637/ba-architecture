@@ -10,7 +10,6 @@ flowchart TD
 
     subgraph "Path 1: Urgent Operational Work"
         direction LR
-<<<<<<< HEAD
         B -->|Break-Fix| C[Handled by **Operational Incident Process** - Outside Demand Workflow];
     end
 
@@ -28,7 +27,6 @@ flowchart TD
         J -->|No| G;
         J -->|Yes| K(4. Qualified);
         K -->|"Business case and architectural review are performed. *Rigor increases with each Tier.*"| L(5. Approved);
-=======
         B -->|Break-Fix| C["Handled by **Operational Incident Process**
         Outside Demand Workflow"];
     end
@@ -54,34 +52,27 @@ flowchart TD
         K -->|"Business case and architectural
         review are performed.
         *Rigor increases with each Tier.*"| L["5. Approved"];
->>>>>>> acaa6ba (Updated more stuff)
     end
 
     subgraph "Governance Decision"
         style L fill:#cde4ff
-<<<<<<< HEAD
         L --> M{1. Technology Subcommittee Reviews & Recommends?};
         M -->|No| G;
         M -->|Yes| N{2. Technology Advisory Committee TAC Approves Funding?};
-=======
         L --> M{"1. Technology Subcommittee
         Reviews & Recommends?"};
         M -->|No| G;
         M -->|Yes| N{"2. Technology Advisory Committee TAC
         Approves Funding?"};
->>>>>>> acaa6ba (Updated more stuff)
         N -->|No| G;
     end
 
     subgraph "Execution Handoff"
-<<<<<<< HEAD
         N -->|Yes| O(6. Completed);
         O --> P[Demand is converted to a formal Project and handed off to **EPMO/Delivery Team**];
-=======
         N -->|Yes| O["6. Completed"];
         O --> P["Demand is converted to a formal Project
         and handed off to **EPMO/Delivery Team**"];
->>>>>>> acaa6ba (Updated more stuff)
     end
 
     %% Endpoints
