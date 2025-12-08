@@ -33,7 +33,7 @@ flowchart TD
         style L fill:#cde4ff
         L --> M{1. Technology Subcommittee Reviews & Recommends?};
         M -->|No| G;
-        M -->|Yes| N{2. Technology Advisory Committee (TAC) Approves Funding?};
+        M -->|Yes| N{2. Technology Advisory Committee TAC Approves Funding?};
         N -->|No| G;
     end
 
