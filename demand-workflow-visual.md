@@ -1,85 +1,88 @@
 # Demand Management Workflow Visual
 
-This document contains a Mermaid diagram illustrating the consolidated demand management workflow for all project types.
+This document contains a Mermaid diagram illustrating the consolidated demand management workflow for all project types. This version has been rewritten for improved compatibility and rendering.
 
 ```mermaid
 flowchart TD
-    subgraph "Initiation"
-        A["Start: Business Idea or Need"] --> B{"What is the nature of the work?"};
-    end
+    %% Define Node Shapes
+    style A rect
+    style B rhombus
+    style C rect
+    style D rect
+    style E rhombus
+    style F rect
+    style G rect
+    style H rect
+    style I rect
+    style J rhombus
+    style K rect
+    style L rect
+    style M rhombus
+    style N rhombus
+    style O rect
+    style P rect
+    style Z rect
 
-    subgraph "Path 1: Urgent Operational Work"
-        direction LR
-        B -->|Break-Fix| C[Handled by **Operational Incident Process** - Outside Demand Workflow];
-    end
+    %% Define Node Text
+    A["Start: Business Idea or Need"]
+    B{"What is the nature of the work?"}
+    C["Handled by **Operational Incident Process**
+    Outside Demand Workflow"]
+    D["Submit Lightweight Demand"]
+    E{"Approved by
+    **Team or Business Unit Lead**?"}
+    F["Work added directly to
+    **Team Backlog or Kanban**"]
+    G["Demand Rejected or Revised"]
+    H["1. Draft and 2. Submitted"]
+    I["3. Screening"]
+    J{"Is demand viable, unique,
+    and correctly tiered?"}
+    K["4. Qualified"]
+    L["5. Approved"]
+    M{"1. Technology Subcommittee
+    Reviews and Recommends?"}
+    N{"2. Technology Advisory Committee TAC
+    Approves Funding?"}
+    O["6. Completed"]
+    P["Demand is converted to a formal Project
+    and handed off to **EPMO or Delivery Team**"]
+    Z["End"]
 
-    subgraph "Path 2: Lightweight Enhancement Work"
-        B -->|"**Enhancement** (e.g., <$50k)"| D(Submit Lightweight Demand);
-        D --> E{Approved by **Team/Business Unit Lead**?};
-        E -->|Yes| F[Work added directly to **Team Backlog/Kanban**];
-        E -->|No| G[Demand Rejected or Revised];
-    end
+    %% Define Connections
+    A --> B
 
-    subgraph "Path 3: Formal Project Work"
-        B -->|"**Project** (Tier 1, 2, or 3)"| H(1. Draft & 2. Submitted);
-        H --> I(3. Screening);
-        I -->|"Triage by EPMO/EA"| J{Is demand viable, unique, and correctly tiered?};
-        J -->|No| G;
-        J -->|Yes| K(4. Qualified);
-        K -->|"Business case and architectural review are performed. *Rigor increases with each Tier.*"| L(5. Approved);
-        B -->|Break-Fix| C["Handled by **Operational Incident Process**
-        Outside Demand Workflow"];
-    end
+    B -->|Break-Fix| C
+    B -->|"**Enhancement**
+    e.g. less than 50k"| D
 
-    subgraph "Path 2: Lightweight Enhancement Work"
-        B -->|"**Enhancement**
-        e.g. less than 50k"| D["Submit Lightweight Demand"];
-        D --> E{"Approved by
-        **Team/Business Unit Lead**?"};
-        E -->|Yes| F["Work added directly to
-        **Team Backlog/Kanban**"];
-        E -->|No| G["Demand Rejected or Revised"];
-    end
+    B -->|"**Project**
+    Tier 1, 2, or 3"| H
 
-    subgraph "Path 3: Formal Project Work"
-        B -->|"**Project**
-        Tier 1, 2, or 3"| H["1. Draft & 2. Submitted"];
-        H --> I["3. Screening"];
-        I -->|"Triage by EPMO/EA"| J{"Is demand viable, unique,
-        and correctly tiered?"};
-        J -->|No| G;
-        J -->|Yes| K["4. Qualified"];
-        K -->|"Business case and architectural
-        review are performed.
-        *Rigor increases with each Tier.*"| L["5. Approved"];
-    end
+    C --> Z
+    
+    D --> E
+    E -->|Yes| F
+    E -->|No| G
+    F --> Z
+    G --> Z
 
-    subgraph "Governance Decision"
-        style L fill:#cde4ff
-        L --> M{1. Technology Subcommittee Reviews & Recommends?};
-        M -->|No| G;
-        M -->|Yes| N{2. Technology Advisory Committee TAC Approves Funding?};
-        L --> M{"1. Technology Subcommittee
-        Reviews & Recommends?"};
-        M -->|No| G;
-        M -->|Yes| N{"2. Technology Advisory Committee TAC
-        Approves Funding?"};
-        N -->|No| G;
-    end
-
-    subgraph "Execution Handoff"
-        N -->|Yes| O(6. Completed);
-        O --> P[Demand is converted to a formal Project and handed off to **EPMO/Delivery Team**];
-        N -->|Yes| O["6. Completed"];
-        O --> P["Demand is converted to a formal Project
-        and handed off to **EPMO/Delivery Team**"];
-    end
-
-    %% Endpoints
-    C --> Z["End"];
-    F --> Z;
-    G --> Z;
-    P --> Z;
+    H --> I
+    I -->|"Triage by EPMO or EA"| J
+    J -->|No| G
+    J -->|Yes| K
+    K -->|"Business case and architectural
+    review are performed.
+    Rigor increases with each Tier."| L
+    
+    L --> M
+    M -->|No| G
+    M -->|Yes| N
+    N -->|No| G
+    N -->|Yes| O
+    
+    O --> P
+    P --> Z
 
     %% Styling
     classDef governance fill:#cde4ff,stroke:#0050be,stroke-width:2px;
