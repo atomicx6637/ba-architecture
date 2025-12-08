@@ -79,6 +79,33 @@ To empower teams with autonomy while ensuring strategic investment in the contin
     *   Once the TAC approves the budget, the allocated funds are given to the respective team or business unit leads.
     *   These leaders have full autonomy to approve individual enhancement requests (<$50k) against their budget throughout the year. They are accountable for managing their allocated funds and are required to maintain visibility of all work on their team-level Kanban boards.
 
+### 2.5. Demand Management Workflow & Stage-Gate Requirements
+
+This section defines the end-to-end workflow for demand management, aligned with the official **ESV-07: Demand Management Value Stream**. It outlines the specific requirements and key decisions at each stage for each demand tier.
+
+**Note:** The **Break-Fix** tier is explicitly excluded from this workflow. It is considered an operational process managed via the standard incident management ticketing system.
+
+#### 2.5.1. Workflow Stages (Value Stream Aligned)
+
+| Stage | Purpose | Key Activities |
+| :--- | :--- | :--- |
+| **1. Draft** | Idea capture. | An idea is documented by a potential sponsor using a demand management tool. |
+| **2. Submitted** | Formal submission for review. | The sponsor formally submits the demand, indicating it is ready for initial screening. |
+| **3. Screening** | Initial triage and validation. | The EPMO and EA perform a quick review to ensure completeness, check for duplicates, and assign/validate the tier. |
+| **4. Qualified** | Business case development. | The sponsor, often with support from a BA or EA, develops the detailed business case and requirements. |
+| **5. Approved** | Governance and funding decision. | Governance bodies (Subcommittee and TAC) review the business case, prioritize the demand, and make a final "Go/No-Go" funding decision. |
+| **6. Completed** | Handoff to execution. | Once funded, the demand is formally converted into a project and handed off to the EPMO and delivery teams. The demand record is closed. |
+
+#### 2.5.2. Stage-Gate Requirements by Tier
+
+| Stage | Enhancement (< $50k) | Tier 3 (< $500k) | Tier 2 ($500k - $2M) | Tier 1 (> $2M) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Submitted** | **Form:** Simplified 1-Page Demand. <br> **Data:** Problem statement, requested change, business owner. | **Form:** Standard Demand Record. <br> **Data:** All fields in the standard record must be complete at a high level. | **Form:** Standard Demand Record. <br> **Data:** All fields must be complete with a high degree of confidence. | **Form:** Program Brief or Strategic Charter. <br> **Data:** Outlines strategic intent, vision, and expected enterprise-level outcomes. |
+| **Screening** | **Process:** N/A (Handled by Team Lead). | **By:** EPMO/EA. <br> **Gate:** Is the form complete? Is the tier correct? Is it a duplicate? | **By:** EPMO/EA. <br> **Gate:** Same as Tier 3. High-level check for major architectural or cross-portfolio conflicts. | **By:** EPMO/EA/Strategy Office. <br> **Gate:** Same as Tier 2, plus validation of alignment with documented corporate strategic objectives. |
+| **Qualified** | **Process:** N/A. | **By:** Business Sponsor. <br> **Requirement:** "Right-sized" business case with clear problem statement, proposed solution, cost/resource estimate (T-shirt size), and benefit estimate (ROI). | **By:** Business Sponsor + assigned BA/EA. <br> **Requirement:** Formal business case. Includes financial analysis (NPV/IRR), risk assessment, and **mandatory formal architectural review**. | **By:** Program Director + Dedicated Team. <br> **Requirement:** Comprehensive program charter and business case. Includes multi-year financial plan, benefits realization plan, and a future-state architecture vision. |
+| **Approved** | **By:** Team/Business Unit Lead. <br> **Gate:** Does this fit within our enhancement budget? Final approval for team backlog. | **By:** Technology Subcommittee & TAC. <br> **Gate:** Subcommittee prioritizes and recommends. TAC provides final "Go/No-Go" funding approval, often via consent agenda. | **By:** Technology Subcommittee & TAC. <br> **Gate:** Subcommittee performs deep review of dependencies and recommends. TAC provides final "Go/No-Go" funding, typically requiring sponsor presentation. | **By:** Technology Subcommittee & TAC. <br> **Gate:** Subcommittee reviews for portfolio impact and readiness. TAC makes final strategic investment decision based on formal executive presentation. |
+| **Completed** | **Handoff:** Added to team-level Kanban board/backlog for execution. | **Handoff:** EPMO assigns a Project Manager. Project Charter is finalized. Demand record is closed. | **Handoff:** Same as Tier 3. | **Handoff:** Program Director is formally chartered. EPMO establishes program-level governance and initiates project workstreams. Demand record is closed. |
+
 ---
 
 ## 3. Phased Maturity Roadmap (3-Year Plan)
