@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-The Enterprise Architecture (EA) function serves as a strategic partner to the enterprise, providing services that enable informed decision-making, optimize investments, and reduce organizational risk. This catalog defines the services we provide across two primary domains: **Business Architecture** and **Portfolio Strategy Office**.
+The Enterprise Architecture (EA) function serves as a strategic partner to the enterprise, providing services that enable informed decision-making, optimize investments, and reduce organizational risk. This catalog defines the services we provide across three primary domains: **Business Architecture**, **Technology Architecture**, and **Portfolio Strategy Office**.
 
 Our services are designed to **enable and accelerate** business objectives—not to create bottlenecks. We work collaboratively with stakeholders to ensure that strategic initiatives are positioned for success through sound architectural guidance, transparent portfolio management, and alignment of technology investments with business outcomes.
 
@@ -11,8 +11,9 @@ Our services are designed to **enable and accelerate** business objectives—not
 ## How to Use This Catalog
 
 - **Business Leaders**: Identify which services support your strategic initiatives and operational needs
-- **Project Sponsors**: Understand how EA services integrate into your project lifecycle
-- **IT Leadership**: Leverage EA services for technology strategy and investment optimization
+- **Project Sponsors**: Understand how EA services integrate into your project lifecycle, from advisory support to architectural governance
+- **IT Leadership**: Leverage EA services for technology strategy, roadmap planning, standards governance, and investment optimization
+- **Solution Architects**: Access architectural guidance, standards, design patterns, and review processes
 - **Finance**: Partner with us on capital planning and portfolio investment visibility
 
 **Key Principle**: EA services are advisory and enabling. We provide expertise, frameworks, and insights that empower stakeholders to make better decisions faster.
@@ -169,7 +170,414 @@ The Business Architecture domain provides foundational models and insights that 
 
 ---
 
-## Service Domain 2: Portfolio Strategy Office
+## Service Domain 2: Technology Architecture
+
+The Technology Architecture domain provides services that define, manage, and govern the technology direction of the enterprise. These services ensure technology investments are aligned with business strategy, enable interoperability, and create a coherent technology landscape.
+
+### TA-01: Technology Roadmap Management & Ownership
+
+**Service Owner**: Chief Architect / Lead Technology Architect
+
+**Purpose**: Develop, maintain, and govern comprehensive technology roadmaps that align technology evolution with business strategy, capability development, and investment priorities across the enterprise.
+
+**Value Delivered**:
+- **Strategic Alignment**: Ensures technology investments directly support business capabilities and strategic objectives
+- **Investment Sequencing**: Provides clear multi-year view of technology evolution to guide capital planning and portfolio prioritization
+- **Dependency Management**: Identifies and manages technology dependencies, enabling proper sequencing of initiatives
+- **Risk Reduction**: Anticipates technology obsolescence, vendor risks, and integration challenges before they become crises
+- **Stakeholder Transparency**: Creates shared understanding of technology direction across business and IT stakeholders
+- **Architectural Coherence**: Ensures technology choices build toward a coherent future state rather than creating fragmentation
+
+**Primary Customers**:
+- Executive Leadership (technology investment decisions)
+- CIO and IT Leadership (technology strategy and planning)
+- Business Unit Leaders (understanding technology enablement timelines)
+- Portfolio Strategy Office (capital planning and initiative sequencing)
+- Enterprise and Solution Architects (technology standards and direction)
+- Vendors and Strategic Technology Partners (partnership planning)
+
+**Key Activities**:
+- Develop and maintain enterprise technology roadmaps (infrastructure, applications, data, security, integration)
+- Facilitate quarterly technology roadmap governance reviews with stakeholders
+- Align technology roadmaps with business capability evolution and strategic initiatives
+- Conduct technology landscape assessments and gap analysis
+- Manage technology investment themes and sequencing logic
+- Define technology transition paths and migration strategies
+- Coordinate roadmap dependencies across business units and domains
+- Track roadmap execution and adjust based on portfolio performance
+- Evaluate emerging technologies and recommend adoption timing
+- Publish roadmap views tailored to different stakeholder audiences
+
+**Inputs**:
+- Enterprise strategic plan and business priorities
+- Business capability maturity assessments and evolution plans (from BA-01)
+- Technology capital plan and portfolio pipeline (from PSO-02)
+- Current state technology landscape and inventory
+- Vendor technology roadmaps and product lifecycle information
+- Technology trends, industry benchmarks, and emerging technology assessments
+- Business unit technology needs and pain points
+- Technical debt assessments and remediation priorities
+- Regulatory and compliance technology requirements
+
+**Outputs**:
+- Enterprise technology roadmap (3-5 year horizon) by domain:
+  - Infrastructure roadmap (cloud, network, compute, storage)
+  - Application portfolio roadmap (modernization, rationalization, new capabilities)
+  - Data and analytics roadmap (platforms, governance, advanced analytics)
+  - Integration and API roadmap (middleware, service bus, API management)
+  - Security and compliance roadmap (cybersecurity, identity, risk management)
+  - Emerging technology roadmap (AI/ML, IoT, edge computing, quantum)
+- Capability-to-technology roadmap mappings
+- Technology dependency maps and sequencing recommendations
+- Technology investment themes aligned to strategic objectives
+- Roadmap dashboards showing execution progress vs. plan
+- Technology standards and direction documentation
+- Vendor and partnership strategy recommendations
+- Technology sunset and migration plans
+- Executive roadmap summary views (one-page strategic roadmaps)
+
+**Service Levels**:
+- Annual roadmap refresh and publication: Q4
+- Quarterly roadmap governance reviews: Within first month of each quarter
+- Monthly roadmap execution tracking updates
+- Ad-hoc roadmap impact analysis for new initiatives: 3-5 business days
+- Emerging technology assessments: 2-3 weeks per technology domain
+
+**How to Engage**:
+- Participate in quarterly technology roadmap governance forums
+- Request roadmap briefings for strategic planning or initiative planning
+- Submit technology roadmap change requests via EA intake
+- Contact Technology Architecture team for roadmap analysis or emerging technology assessments
+
+**Roadmap Governance Structure**:
+- **Chief Information Officer (CIO)**: Overall ownership of enterprise technology roadmap and investment authority
+- **Chief Digital & Innovation Officer (CDIO)**: Non-regulated technology innovation roadmap and digital product platform roadmaps
+- **Chief Operating Officer (COO)**: Regulated operations technology and OT/IT convergence roadmaps
+- **VP, Data & Analytics**: Data platform, analytics, and AI/ML roadmaps
+- **VP, IT Operations & Infrastructure**: Core IT infrastructure, cloud, network, and security roadmaps
+- **Enterprise Architecture Team**: Roadmap integration, standards governance, and cross-domain alignment
+- **Technology Roadmap Governance Council**: Quarterly reviews, investment prioritization, and roadmap approval authority (CIO, CDIO, COO, CFO, Chief Architect, Business Unit CIOs)
+- **Business Unit Technology Liaisons**: Embedded architects ensuring business-IT roadmap alignment and translating business needs into technology requirements
+
+**Integration with Other EA Services**:
+- **With BA-01 (Capability Management)**: Technology roadmaps align to capability evolution plans; capability maturity gaps inform technology investment priorities
+- **With PSO-02 (Capital Planning)**: Roadmaps provide the sequencing logic for multi-year capital planning; capital constraints inform roadmap phasing
+- **With PSO-04 (Portfolio Performance)**: Portfolio execution data informs roadmap adjustments; roadmap provides context for evaluating initiative performance
+- **With BA-03 (BA Advisory)**: Roadmaps inform architectural guidance for initiatives; initiative learnings feed back into roadmap refinement
+
+---
+
+### TA-02: Architecture Review Board (ARB) Services
+
+**Service Owner**: Chief Architect
+
+**Purpose**: Provide structured architectural governance through formal review of technology solutions, ensuring alignment with enterprise architecture principles, standards, and strategic direction before significant investment or implementation.
+
+**Value Delivered**:
+- **Risk Mitigation**: Identifies architectural risks, technical debt, and integration issues before costly implementation
+- **Investment Protection**: Ensures technology investments are sound and aligned with enterprise direction
+- **Standards Compliance**: Validates adherence to enterprise architecture standards and patterns
+- **Knowledge Sharing**: Disseminates architectural best practices and lessons learned across the organization
+- **Cross-Initiative Alignment**: Identifies opportunities for reuse and prevents duplicative solutions
+- **Quality Assurance**: Ensures solutions are scalable, secure, maintainable, and supportable
+
+**Primary Customers**:
+- Solution Architects (submitting designs for review)
+- Project Sponsors and Initiative Leads (architectural approval for projects)
+- IT Leadership (architectural governance compliance)
+- Vendors and System Integrators (design validation)
+- Security and Compliance teams (architectural risk assessment)
+
+**Key Activities**:
+- Conduct formal Architecture Review Board meetings (bi-weekly or monthly)
+- Review solution architecture designs against enterprise standards
+- Assess technology choices for strategic fit and roadmap alignment
+- Evaluate integration approaches and data architecture
+- Review security architecture and compliance considerations
+- Provide architectural decisions and recommendations
+- Track architectural exceptions and waivers
+- Escalate significant architectural risks to leadership
+- Maintain ARB decision log and architectural precedents
+- Facilitate architectural dispute resolution
+
+**Architecture Review Stages**:
+1. **Conceptual Review** (Early Planning): High-level approach, technology choices, alignment check
+2. **Logical Review** (Design Phase): Detailed architecture, integration patterns, data flows
+3. **Implementation Review** (Pre-Build): Build approach, deployment model, operational readiness
+4. **Post-Implementation Review**: Lessons learned, actual vs. planned architecture
+
+**Inputs**:
+- Solution architecture documentation and design artifacts
+- Business requirements and functional specifications
+- Technology roadmaps and enterprise standards (from TA-01, TA-04)
+- Integration and data flow diagrams
+- Security and compliance requirements
+- Vendor proposals and technical evaluations
+- Previous ARB decisions and architectural patterns
+
+**Outputs**:
+- ARB review decisions (Approved, Conditionally Approved, Not Approved, Deferred)
+- Architectural guidance and recommendations
+- Identified risks and mitigation strategies
+- Required design changes or conditions for approval
+- Architectural exceptions and waivers (with justification)
+- ARB decision log and meeting minutes
+- Architectural findings and corrective actions
+- Reusable patterns and reference architectures
+
+**Service Levels**:
+- ARB meeting frequency: Bi-weekly or monthly (based on demand)
+- Submission deadline: 5 business days before ARB meeting
+- Initial review completeness check: 2 business days
+- ARB decision communication: Within 2 business days of meeting
+- Expedited review for urgent initiatives: 3-5 business days (by exception)
+
+**ARB Membership**:
+- **Chair**: Chief Architect or Lead Enterprise Architect
+- **Core Members**:
+  - Lead Technology Architect
+  - Lead Security Architect
+  - Lead Data Architect
+  - Lead Infrastructure Architect
+  - Lead Application Architect
+- **Advisory Members** (as needed):
+  - Business Architects
+  - Domain Architects (Cloud, Integration, Analytics)
+  - IT Operations Leadership
+  - Information Security Leadership
+- **Voting Rights**: Core members; Chair has tie-breaking authority
+- **Quorum**: Minimum 3 core members for decision-making
+
+**Review Triggers (When ARB Review is Required)**:
+- New technology introductions or major version upgrades
+- Solutions exceeding capital threshold (e.g., $250K+)
+- Cross-functional or enterprise-wide initiatives
+- Cloud migrations or infrastructure changes
+- New integration patterns or middleware
+- Data architecture changes affecting multiple systems
+- Security architecture for critical systems
+- Deviations from established standards (exception requests)
+
+**How to Engage**:
+- Submit architecture review request via EA intake portal
+- Use ARB submission template with required documentation
+- Attend ARB meeting to present and answer questions
+- Contact Chief Architect for pre-ARB consultation or guidance
+
+**Integration with Other EA Services**:
+- **With TA-01 (Roadmap Management)**: Validates solutions align with technology roadmaps
+- **With TA-04 (Standards & Governance)**: Enforces compliance with enterprise standards
+- **With BA-03 (BA Advisory)**: Incorporates business architecture guidance into reviews
+- **With PSO-01 (Demand Intake)**: ARB review is gate in demand-to-delivery process
+
+---
+
+### TA-03: Design Assurance & Architecture Advisory
+
+**Service Owner**: Enterprise Architecture Team
+
+**Purpose**: Provide proactive, consultative architecture advisory services throughout the initiative lifecycle, ensuring solutions are designed for success before formal ARB review.
+
+**Value Delivered**:
+- **Early Guidance**: Helps teams make sound architectural decisions early, avoiding costly rework
+- **Faster ARB Approval**: Designs that receive advisory support pass ARB review faster with fewer conditions
+- **Knowledge Transfer**: Builds architectural capability within delivery teams
+- **Collaboration**: Fosters partnership between EA and delivery teams rather than "ivory tower" architecture
+- **Quality Designs**: Results in better architected, more maintainable solutions
+- **Risk Reduction**: Identifies and resolves architectural issues before they become problems
+
+**Primary Customers**:
+- Solution Architects (architecture design support)
+- Project Teams and Initiative Leads (architectural guidance)
+- Business Analysts (translating requirements to architectural needs)
+- Vendors and Implementation Partners (design collaboration)
+- Product Owners (technical feasibility and approach)
+
+**Key Activities**:
+- Participate in solution design workshops and architecture sessions
+- Review architecture artifacts and provide feedback iteratively
+- Conduct architectural health checks and design reviews
+- Provide reference architectures and design patterns
+- Mentor solution architects on EA standards and best practices
+- Facilitate technical design decisions and trade-off analysis
+- Connect teams with relevant expertise and prior art
+- Conduct proof-of-concept reviews and technical spikes
+- Provide pre-ARB readiness assessments
+- Support vendor RFP evaluation from architectural perspective
+
+**Advisory Engagement Levels**:
+1. **Light Touch** (Low complexity/risk): Ad-hoc questions, reference to standards and patterns, minimal review
+2. **Standard** (Medium complexity/risk): Periodic design reviews, checkpoint meetings, feedback on key artifacts
+3. **Embedded** (High complexity/risk): Dedicated architect assigned to team, ongoing participation in design activities
+
+**Inputs**:
+- Business requirements and use cases
+- Solution architecture work in progress
+- Technical constraints and requirements
+- Integration requirements and dependencies
+- Current state architecture and systems landscape
+- Enterprise architecture standards and patterns (from TA-04)
+- Technology roadmaps (from TA-01)
+
+**Outputs**:
+- Architectural guidance and design recommendations
+- Reviewed and improved architecture documentation
+- Reference architectures and reusable patterns
+- Technology selection guidance and evaluations
+- Integration approach recommendations
+- Design review findings and recommendations
+- Pre-ARB readiness assessment
+- Architectural mentoring and knowledge transfer
+
+**Service Levels**:
+- Initial advisory request response: 2 business days
+- Ad-hoc question response: 1 business day
+- Design review scheduling: Within 1 week
+- Design review feedback delivery: 3-5 business days after review
+- Embedded architect assignment: Subject to capacity, typically 1-2 weeks notice
+
+**When to Engage Design Assurance**:
+- **Early/Conceptual Phase**: Technology approach, high-level architecture, feasibility
+- **Design Phase**: Detailed architecture, integration patterns, data models
+- **RFP/Vendor Selection**: Architectural evaluation criteria, vendor response assessment
+- **Before ARB Submission**: Pre-review to ensure readiness and address issues
+- **Implementation Support**: Clarification of design decisions, addressing emergent issues
+
+**How to Engage**:
+- Submit design assurance request via EA intake
+- Reach out directly to Enterprise Architecture team for informal consultation
+- Include EA in initiative planning and design workshops
+- Request embedded architect for complex/strategic initiatives
+
+**Design Assurance Toolkit**:
+- Solution architecture review checklist
+- Reference architecture library (by domain)
+- Design pattern catalog (integration, security, data, etc.)
+- Technology evaluation framework
+- ARB submission readiness checklist
+- Architecture maturity assessment
+
+**Integration with Other EA Services**:
+- **With TA-02 (ARB)**: Prepares solutions for successful ARB review
+- **With TA-01 (Roadmap Management)**: Ensures designs align with technology direction
+- **With TA-04 (Standards & Governance)**: Applies standards in consultative manner
+- **With BA-03 (BA Advisory)**: Collaborates on business and technical architecture alignment
+
+---
+
+### TA-04: Architecture Standards & Governance
+
+**Service Owner**: Chief Architect / Enterprise Architecture Team
+
+**Purpose**: Define, maintain, and govern enterprise architecture standards, principles, and policies that guide technology decisions and ensure a coherent, interoperable technology landscape.
+
+**Value Delivered**:
+- **Consistency**: Ensures consistent technology choices across the enterprise, reducing complexity
+- **Interoperability**: Standards enable systems to integrate and share data seamlessly
+- **Risk Reduction**: Proven standards reduce technical risk compared to bespoke approaches
+- **Cost Efficiency**: Standardization enables economies of scale in licensing, support, and training
+- **Faster Delivery**: Teams don't reinvent the wheel; approved patterns accelerate development
+- **Quality**: Standards embody best practices, improving security, performance, and maintainability
+- **Vendor Management**: Standardized technology stack simplifies vendor relationships and negotiations
+
+**Primary Customers**:
+- Solution Architects (applying standards to designs)
+- IT Leadership (technology strategy and vendor management)
+- Development Teams (implementation standards and patterns)
+- Security and Compliance (security standards enforcement)
+- Procurement (approved vendor and product lists)
+- Third-party vendors and integrators (integration standards)
+
+**Key Activities**:
+- Develop and maintain enterprise architecture principles and standards
+- Define technology standards by domain (infrastructure, application, data, integration, security)
+- Maintain approved technology stack and product standards
+- Create and publish architecture reference models and patterns
+- Facilitate architecture standards governance and change control
+- Assess emerging technologies for potential standardization
+- Manage architecture exception and waiver process
+- Conduct architecture compliance audits and assessments
+- Publish architecture guidance, playbooks, and standards documentation
+- Train and educate organization on architecture standards
+
+**Architecture Standards Domains**:
+1. **Infrastructure Standards**: Cloud platforms, virtualization, network, storage, compute
+2. **Application Standards**: Development frameworks, languages, application patterns, deployment models
+3. **Data Standards**: Databases, data platforms, data modeling, master data, metadata
+4. **Integration Standards**: APIs, messaging, ESB, integration patterns, data exchange formats
+5. **Security Standards**: Authentication, authorization, encryption, secure coding, compliance
+6. **DevOps Standards**: CI/CD, automation, infrastructure-as-code, container orchestration
+7. **Emerging Technology Standards**: AI/ML, IoT, edge computing, blockchain (as applicable)
+
+**Inputs**:
+- Enterprise strategic plan and IT strategy
+- Technology roadmaps (from TA-01)
+- Industry best practices and standards (ISO, TOGAF, NIST, etc.)
+- Vendor product roadmaps and technology trends
+- ARB decisions and architectural learnings (from TA-02)
+- Regulatory and compliance requirements
+- Architecture community feedback and change requests
+- Security and risk management requirements
+
+**Outputs**:
+- **Enterprise Architecture Principles**: Foundational beliefs guiding all architecture decisions
+- **Technology Standards Documentation**: Detailed standards by domain with rationale
+- **Approved Technology Stack**: List of approved products, platforms, and versions
+- **Reference Architectures**: Canonical solution patterns for common scenarios
+- **Design Patterns Library**: Reusable patterns for integration, security, data, etc.
+- **Architecture Decision Records (ADRs)**: Documentation of key architecture decisions
+- **Standards Compliance Metrics**: Tracking adoption and compliance across portfolio
+- **Exception/Waiver Process**: Guidelines and tracking for standards deviations
+- **Architecture Guidelines and Playbooks**: Practical guidance for applying standards
+
+**Service Levels**:
+- Annual standards review and update cycle: Q4
+- Quarterly standards governance forum
+- Architecture principles: Reviewed annually or upon strategic changes
+- New technology evaluation for standardization: 4-6 weeks
+- Exception/waiver request review: 1 week
+- Standards documentation updates: Published within 2 weeks of approval
+- Ad-hoc standards questions: 2 business days
+
+**Architecture Governance Framework**:
+- **Architecture Principles**: 8-12 core principles (e.g., "Buy before Build", "API-First", "Cloud-First")
+- **Standards Tiers**:
+  - **Mandatory Standards**: Required for all new solutions (e.g., approved cloud platforms)
+  - **Recommended Standards**: Preferred unless justified exception (e.g., programming languages)
+  - **Emerging Standards**: Under evaluation, pilot projects allowed (e.g., new AI/ML tools)
+  - **Sunset Standards**: Being phased out, no new implementations (e.g., legacy platforms)
+
+**Exception and Waiver Process**:
+1. Solution team submits exception request with business/technical justification
+2. EA team evaluates impact on standards compliance and architectural coherence
+3. ARB reviews exception requests requiring architectural approval
+4. Exceptions granted with time limits and conditions
+5. Exception tracking and periodic review for potential standard changes
+
+**How to Engage**:
+- Access standards portal/repository for current standards documentation
+- Submit standards change requests or exception requests via EA intake
+- Participate in quarterly architecture standards forums
+- Contact EA team for standards interpretation or guidance
+- Request standards training or workshops for teams
+
+**Standards Communication & Adoption**:
+- Architecture standards portal (central repository)
+- Quarterly architecture town halls and standards updates
+- Architecture Community of Practice (monthly)
+- Standards training and onboarding for new architects
+- Standards champions embedded in major business units
+- Regular architecture blog posts and communications
+
+**Integration with Other EA Services**:
+- **With TA-02 (ARB)**: Standards are the evaluation criteria for ARB reviews
+- **With TA-03 (Design Assurance)**: Standards guide advisory recommendations
+- **With TA-01 (Roadmap Management)**: Standards evolve with technology roadmap
+- **With PSO-03 (SPM Platform)**: Standards compliance tracked in portfolio
+
+---
+
+## Service Domain 3: Portfolio Strategy Office
 
 The Portfolio Strategy Office domain provides services that optimize technology and business investments, ensure strategic alignment, and provide transparency into demand, portfolio health, and capital deployment. These services enable executive leadership to make informed investment decisions.
 
@@ -440,27 +848,36 @@ The Portfolio Strategy Office domain provides services that optimize technology 
 
 ## Cross-Domain Integration: How Our Services Work Together
 
-The Business Architecture and Portfolio Strategy Office domains are designed to work seamlessly together, creating a comprehensive view from strategy to execution:
+The Business Architecture, Technology Architecture, and Portfolio Strategy Office domains are designed to work seamlessly together, creating a comprehensive view from strategy to execution:
 
 ### Strategic Planning Cycle Integration
 1. **Business Architecture** provides capability maturity assessments and value stream performance insights that inform strategic priorities
-2. **Portfolio Strategy Office** translates strategic priorities into capital planning themes and demand evaluation criteria
-3. **Business Architecture** assesses incoming demand for capability and value stream alignment
-4. **Portfolio Strategy Office** integrates architectural assessments into portfolio prioritization and capital allocation
+2. **Technology Architecture** develops technology roadmaps aligned to capability evolution and strategic objectives
+3. **Portfolio Strategy Office** translates strategic priorities and technology roadmaps into capital planning themes and demand evaluation criteria
+4. **Business Architecture** assesses incoming demand for capability and value stream alignment
+5. **Technology Architecture** evaluates technology fit and roadmap alignment for initiatives
+6. **Portfolio Strategy Office** integrates architectural assessments into portfolio prioritization and capital allocation
 
 ### Initiative Lifecycle Integration
 1. **Demand Intake** (PSO-01) captures business need and routes to appropriate assessment
 2. **Business Architecture Advisory** (BA-03) assesses capability and value stream impacts
-3. **Capital Planning** (PSO-02) ensures funding alignment and budget availability
-4. **SPM Platform** (PSO-03) tracks initiative from concept through delivery
-5. **Portfolio Performance** (PSO-04) monitors execution and benefits realization
-6. **Business Architecture** maintains enterprise models with lessons learned
+3. **Technology Roadmap Management** (TA-01) validates technology approach and roadmap alignment
+4. **Design Assurance** (TA-03) provides proactive architectural guidance during design phase
+5. **Architecture Review Board** (TA-02) conducts formal governance review at key milestones
+6. **Capital Planning** (PSO-02) ensures funding alignment and budget availability
+7. **SPM Platform** (PSO-03) tracks initiative from concept through delivery
+8. **Portfolio Performance** (PSO-04) monitors execution and benefits realization
+9. **Business Architecture** and **Technology Architecture** maintain enterprise models with lessons learned
+10. **Standards & Governance** (TA-04) provides compliance tracking and exception management
 
 ### Executive Decision Support Integration
 - Capability heat maps and value stream assessments inform portfolio investment themes
-- Portfolio performance data highlights where capability investments are succeeding or struggling
-- Combined EA and PSO insights enable data-driven investment trade-off decisions
-- Integrated dashboards show both "what we're building" (portfolio) and "what we're strengthening" (capabilities)
+- Technology roadmaps provide multi-year view of technology evolution aligned to capabilities
+- Architecture standards and compliance metrics track technology debt and risk
+- ARB decisions and architectural risk assessments inform portfolio risk management
+- Portfolio performance data highlights where capability and technology investments are succeeding or struggling
+- Combined BA, TA, and PSO insights enable data-driven investment trade-off decisions
+- Integrated dashboards show "what we're building" (portfolio), "what we're strengthening" (capabilities), "where technology is heading" (roadmaps), and "how well we're complying" (standards)
 
 ---
 
@@ -547,6 +964,10 @@ This service catalog is a living document. We actively seek feedback on:
 | BA-01 | Business Capability Management | Strategic planning & portfolio alignment | Exec Leadership, Portfolio Office, BU Leaders | Self-service + Consultative |
 | BA-02 | Value Stream Catalog & Optimization | Process improvement & CX optimization | Operations, Customer Ops, IT, CI teams | Consultative |
 | BA-03 | Business Architecture Advisory | Initiative success & alignment | Initiative Sponsors, BU Leaders, Exec Leadership | Consultative + Embedded |
+| TA-01 | Technology Roadmap Management & Ownership | Technology direction & investment sequencing | Exec Leadership, CIO, IT Leadership, Portfolio Office | Consultative + Governance |
+| TA-02 | Architecture Review Board (ARB) Services | Risk mitigation & standards compliance | Solution Architects, Project Sponsors, IT Leadership | Governance + Review |
+| TA-03 | Design Assurance & Architecture Advisory | Early guidance & quality designs | Solution Architects, Project Teams, Vendors | Consultative + Embedded |
+| TA-04 | Architecture Standards & Governance | Consistency & interoperability | Solution Architects, IT Leadership, Dev Teams | Self-service + Governance |
 | PSO-01 | Strategic Demand Intake & Assessment | Visibility & fair evaluation | BU Leaders, Exec Leadership, IT, PMO | Self-service + Consultative |
 | PSO-02 | Technology Capital Planning | Investment optimization & predictability | Exec Leadership, Finance, BU Leaders, IT | Consultative |
 | PSO-03 | SPM Platform Ownership | Single source of truth & efficiency | Exec Leadership, PMO, Finance, EA | Self-service + Support |
@@ -555,7 +976,11 @@ This service catalog is a living document. We actively seek feedback on:
 
 ---
 
-**Document Version**: 1.0
-**Last Updated**: 2025-12-05
+**Document Version**: 1.2
+**Last Updated**: 2025-12-08
 **Owner**: Enterprise Architecture Leadership
 **Review Cycle**: Annual (Q4)
+**Version History**:
+- v1.2 (2025-12-08): Added TA-02 Architecture Review Board, TA-03 Design Assurance & Architecture Advisory, and TA-04 Architecture Standards & Governance services
+- v1.1 (2025-12-08): Added Technology Architecture domain and TA-01 Technology Roadmap Management & Ownership service
+- v1.0 (2025-12-05): Initial service catalog release
