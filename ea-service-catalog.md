@@ -20,6 +20,128 @@ Our services are designed to **enable and accelerate** business objectives—not
 
 ---
 
+## Enterprise Architecture Service Portfolio Overview
+
+The EA function delivers **12 services** across **3 integrated domains** that work together to enable strategy-to-execution alignment:
+
+```mermaid
+graph TB
+    subgraph BA[" "]
+        direction TB
+        BA_TITLE["<b>BUSINESS ARCHITECTURE</b><br/>Strategic Business Models & Insights"]
+        BA01["BA-01: Business Capability<br/>Management"]
+        BA02["BA-02: Value Stream Catalog<br/>& Optimization"]
+        BA03["BA-03: Business Architecture<br/>Advisory Services"]
+
+        BA_TITLE --> BA01
+        BA_TITLE --> BA02
+        BA_TITLE --> BA03
+    end
+
+    subgraph TA[" "]
+        direction TB
+        TA_TITLE["<b>TECHNOLOGY ARCHITECTURE</b><br/>Technology Direction & Governance"]
+        TA01["TA-01: Technology Roadmap<br/>Management & Ownership"]
+        TA02["TA-02: Architecture Review<br/>Board Services"]
+        TA03["TA-03: Design Assurance &<br/>Architecture Advisory"]
+        TA04["TA-04: Architecture Standards<br/>& Governance"]
+
+        TA_TITLE --> TA01
+        TA_TITLE --> TA02
+        TA_TITLE --> TA03
+        TA_TITLE --> TA04
+    end
+
+    subgraph PSO[" "]
+        direction TB
+        PSO_TITLE["<b>PORTFOLIO STRATEGY OFFICE</b><br/>Investment Optimization & Performance"]
+        PSO01["PSO-01: Strategic Demand<br/>Intake & Assessment"]
+        PSO02["PSO-02: Technology Capital<br/>Planning & Budget Alignment"]
+        PSO03["PSO-03: Strategic Portfolio<br/>Management Platform"]
+        PSO04["PSO-04: Portfolio Performance<br/>& Insights"]
+        PSO05["PSO-05: Strategic Portfolio<br/>Advisory Services"]
+
+        PSO_TITLE --> PSO01
+        PSO_TITLE --> PSO02
+        PSO_TITLE --> PSO03
+        PSO_TITLE --> PSO04
+        PSO_TITLE --> PSO05
+    end
+
+    classDef titleStyle fill:#2C3E50,stroke:#34495E,stroke-width:3px,color:#ECF0F1,font-weight:bold
+    classDef baStyle fill:#3498DB,stroke:#2980B9,stroke-width:2px,color:#fff
+    classDef taStyle fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    classDef psoStyle fill:#2ECC71,stroke:#27AE60,stroke-width:2px,color:#fff
+
+    class BA_TITLE,TA_TITLE,PSO_TITLE titleStyle
+    class BA01,BA02,BA03 baStyle
+    class TA01,TA02,TA03,TA04 taStyle
+    class PSO01,PSO02,PSO03,PSO04,PSO05 psoStyle
+```
+
+### Service Integration Flow
+
+```mermaid
+graph LR
+    subgraph STRATEGY["STRATEGY & PLANNING"]
+        BA01["BA-01<br/>Capability<br/>Management"]
+        TA01["TA-01<br/>Technology<br/>Roadmap"]
+        PSO02["PSO-02<br/>Capital<br/>Planning"]
+    end
+
+    subgraph DEMAND["DEMAND & DESIGN"]
+        PSO01["PSO-01<br/>Demand<br/>Intake"]
+        BA03["BA-03<br/>Business Arch<br/>Advisory"]
+        TA03["TA-03<br/>Design<br/>Assurance"]
+    end
+
+    subgraph GOVERNANCE["GOVERNANCE & COMPLIANCE"]
+        TA04["TA-04<br/>Architecture<br/>Standards"]
+        TA02["TA-02<br/>Architecture<br/>Review Board"]
+        BA02["BA-02<br/>Value Stream<br/>Optimization"]
+    end
+
+    subgraph EXECUTION["EXECUTION & PERFORMANCE"]
+        PSO03["PSO-03<br/>SPM<br/>Platform"]
+        PSO04["PSO-04<br/>Portfolio<br/>Performance"]
+        PSO05["PSO-05<br/>Portfolio<br/>Advisory"]
+    end
+
+    STRATEGY --> DEMAND
+    DEMAND --> GOVERNANCE
+    GOVERNANCE --> EXECUTION
+    EXECUTION -.Feedback.-> STRATEGY
+
+    classDef strategyStyle fill:#3498DB,stroke:#2980B9,stroke-width:2px,color:#fff
+    classDef demandStyle fill:#9B59B6,stroke:#8E44AD,stroke-width:2px,color:#fff
+    classDef govStyle fill:#E74C3C,stroke:#C0392B,stroke-width:2px,color:#fff
+    classDef execStyle fill:#2ECC71,stroke:#27AE60,stroke-width:2px,color:#fff
+
+    class BA01,TA01,PSO02 strategyStyle
+    class PSO01,BA03,TA03 demandStyle
+    class TA04,TA02,BA02 govStyle
+    class PSO03,PSO04,PSO05 execStyle
+```
+
+### Quick Service Finder
+
+**Need help with strategic planning?**
+→ BA-01 (Capability Management), TA-01 (Technology Roadmap), PSO-02 (Capital Planning)
+
+**Starting a new initiative?**
+→ PSO-01 (Demand Intake), BA-03 (Business Architecture Advisory), TA-03 (Design Assurance)
+
+**Need architectural approval?**
+→ TA-02 (Architecture Review Board), TA-04 (Standards & Governance)
+
+**Want portfolio visibility?**
+→ PSO-03 (SPM Platform), PSO-04 (Portfolio Performance), PSO-05 (Portfolio Advisory)
+
+**Optimizing operations?**
+→ BA-02 (Value Stream Optimization)
+
+---
+
 ## Service Domain 1: Business Architecture
 
 The Business Architecture domain provides foundational models and insights that help the organization understand "what we do" independent of "how we do it." These services enable strategic planning, transformation initiatives, and cross-functional alignment.
@@ -976,11 +1098,12 @@ This service catalog is a living document. We actively seek feedback on:
 
 ---
 
-**Document Version**: 1.2
+**Document Version**: 1.3
 **Last Updated**: 2025-12-08
 **Owner**: Enterprise Architecture Leadership
 **Review Cycle**: Annual (Q4)
 **Version History**:
+- v1.3 (2025-12-08): Added visual service portfolio overview with Mermaid diagrams and Quick Service Finder
 - v1.2 (2025-12-08): Added TA-02 Architecture Review Board, TA-03 Design Assurance & Architecture Advisory, and TA-04 Architecture Standards & Governance services
 - v1.1 (2025-12-08): Added Technology Architecture domain and TA-01 Technology Roadmap Management & Ownership service
 - v1.0 (2025-12-05): Initial service catalog release
