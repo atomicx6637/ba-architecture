@@ -10,7 +10,7 @@ flowchart TD
 
     subgraph "Path 1: Urgent Operational Work"
         direction LR
-        B -->|Break-Fix| C[Handled by **Operational Incident Process** (Outside Demand Workflow)];
+        B -->|Break-Fix| C[Handled by **Operational Incident Process** - Outside Demand Workflow];
     end
 
     subgraph "Path 2: Lightweight Enhancement Work"
