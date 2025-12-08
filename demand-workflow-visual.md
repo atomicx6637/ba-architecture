@@ -5,11 +5,12 @@ This document contains a Mermaid diagram illustrating the consolidated demand ma
 ```mermaid
 flowchart TD
     subgraph "Initiation"
-        A[Start: Business Idea or Need] --> B{What is the nature of the work?};
+        A["Start: Business Idea or Need"] --> B{"What is the nature of the work?"};
     end
 
     subgraph "Path 1: Urgent Operational Work"
         direction LR
+<<<<<<< HEAD
         B -->|Break-Fix| C[Handled by **Operational Incident Process** - Outside Demand Workflow];
     end
 
@@ -27,23 +28,64 @@ flowchart TD
         J -->|No| G;
         J -->|Yes| K(4. Qualified);
         K -->|"Business case and architectural review are performed. *Rigor increases with each Tier.*"| L(5. Approved);
+=======
+        B -->|Break-Fix| C["Handled by **Operational Incident Process**
+        Outside Demand Workflow"];
+    end
+
+    subgraph "Path 2: Lightweight Enhancement Work"
+        B -->|"**Enhancement**
+        e.g. less than 50k"| D["Submit Lightweight Demand"];
+        D --> E{"Approved by
+        **Team/Business Unit Lead**?"};
+        E -->|Yes| F["Work added directly to
+        **Team Backlog/Kanban**"];
+        E -->|No| G["Demand Rejected or Revised"];
+    end
+
+    subgraph "Path 3: Formal Project Work"
+        B -->|"**Project**
+        Tier 1, 2, or 3"| H["1. Draft & 2. Submitted"];
+        H --> I["3. Screening"];
+        I -->|"Triage by EPMO/EA"| J{"Is demand viable, unique,
+        and correctly tiered?"};
+        J -->|No| G;
+        J -->|Yes| K["4. Qualified"];
+        K -->|"Business case and architectural
+        review are performed.
+        *Rigor increases with each Tier.*"| L["5. Approved"];
+>>>>>>> acaa6ba (Updated more stuff)
     end
 
     subgraph "Governance Decision"
         style L fill:#cde4ff
+<<<<<<< HEAD
         L --> M{1. Technology Subcommittee Reviews & Recommends?};
         M -->|No| G;
         M -->|Yes| N{2. Technology Advisory Committee TAC Approves Funding?};
+=======
+        L --> M{"1. Technology Subcommittee
+        Reviews & Recommends?"};
+        M -->|No| G;
+        M -->|Yes| N{"2. Technology Advisory Committee TAC
+        Approves Funding?"};
+>>>>>>> acaa6ba (Updated more stuff)
         N -->|No| G;
     end
 
     subgraph "Execution Handoff"
+<<<<<<< HEAD
         N -->|Yes| O(6. Completed);
         O --> P[Demand is converted to a formal Project and handed off to **EPMO/Delivery Team**];
+=======
+        N -->|Yes| O["6. Completed"];
+        O --> P["Demand is converted to a formal Project
+        and handed off to **EPMO/Delivery Team**"];
+>>>>>>> acaa6ba (Updated more stuff)
     end
 
     %% Endpoints
-    C --> Z([End]);
+    C --> Z["End"];
     F --> Z;
     G --> Z;
     P --> Z;
