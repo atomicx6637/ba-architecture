@@ -27,10 +27,10 @@ flowchart TD
     A["Start: Business Idea or Need"]
     B{"What is the nature of the work?"}
     C["Handled by **Operational Incident Process**<br/>Outside Demand Workflow"]
-    D["Submit Lightweight Demand"]
+    D["📝 **ServiceNow Status: Draft / Submitted**<br/>Submit Lightweight Demand<br/>1-Page Enhancement Form"]
     E{"**GATE: Team Lead Approval**<br/>Does this fit within enhancement budget?"}
-    F["Work added directly to<br/>**Team Backlog or Kanban**"]
-    G["Demand Rejected or Revised"]
+    F["✅ **ServiceNow Status: Approved**<br/>Work added directly to<br/>**Team Backlog or Kanban**"]
+    G["❌ **ServiceNow Status: Rejected**<br/>Demand Rejected or Revised"]
     H["📝 **ServiceNow Status: Draft / Submitted**<br/>───────────────────<br/>**Enhancement:** 1-Page Form<br/>**Tier 3:** Standard Demand Record<br/>**Tier 2:** Standard Demand Record<br/>**Tier 1:** Program Brief/Strategic Charter"]
     I["🔍 **ServiceNow Status: Screening**<br/>───────────────────<br/>**Enhancement:** Skipped<br/>**Tier 3:** EPMO/EA - Form complete? Tier correct? Duplicate?<br/>**Tier 2:** EPMO/EA - Same as T3 + architectural conflicts<br/>**Tier 1:** EPMO/EA/Strategy - Same as T2 + strategic alignment"]
     J{"**GATE: Screening Approval**<br/>Is demand viable, unique,<br/>and correctly tiered?"}
