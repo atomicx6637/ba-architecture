@@ -31,15 +31,15 @@ flowchart TD
     E{"**GATE: Team Lead Approval**<br/>Does this fit within enhancement budget?"}
     F["✅ **ServiceNow Status: Approved**<br/>Work added directly to<br/>**Team Backlog or Kanban**"]
     G["❌ **ServiceNow Status: Rejected**<br/>Demand Rejected or Revised"]
-    H["📝 **ServiceNow Status: Draft / Submitted**<br/>───────────────────<br/>**Enhancement:** 1-Page Form<br/>**Tier 3:** Standard Demand Record<br/>**Tier 2:** Standard Demand Record<br/>**Tier 1:** Program Brief/Strategic Charter"]
-    I["🔍 **ServiceNow Status: Screening**<br/>───────────────────<br/>**Enhancement:** Skipped<br/>**Tier 3:** EPMO/EA - Form complete? Tier correct? Duplicate?<br/>**Tier 2:** EPMO/EA - Same as T3 + architectural conflicts<br/>**Tier 1:** EPMO/EA/Strategy - Same as T2 + strategic alignment"]
+    H["📝 **ServiceNow Status: Draft / Submitted**<br/>───────────────────<br/>**Tier 3:** Standard Demand Record<br/>**Tier 2:** Standard Demand Record<br/>**Tier 1:** Program Brief/Strategic Charter"]
+    I["🔍 **ServiceNow Status: Screening**<br/>───────────────────<br/>**Tier 3:** EPMO/EA - Form complete? Tier correct? Duplicate?<br/>**Tier 2:** EPMO/EA - Same as T3 + architectural conflicts<br/>**Tier 1:** EPMO/EA/Strategy - Same as T2 + strategic alignment"]
     J{"**GATE: Screening Approval**<br/>Is demand viable, unique,<br/>and correctly tiered?"}
-    K["📋 **ServiceNow Status: Qualified**<br/>───────────────────<br/>**Enhancement:** Skipped<br/>**Tier 3:** Right-sized business case with ROI<br/>**Tier 2:** Formal business case + **Mandatory Architectural Review**<br/>**Tier 1:** Comprehensive program charter + multi-year plan"]
+    K["📋 **ServiceNow Status: Qualified**<br/>───────────────────<br/>**Tier 3:** Right-sized business case with ROI<br/>**Tier 2:** Formal business case + **Mandatory Architectural Review**<br/>**Tier 1:** Comprehensive program charter + multi-year plan"]
     L["✓ **ServiceNow Status: Approved**<br/>───────────────────"]
-    M{"**GATE: Tech Subcommittee**<br/>Reviews, prioritizes, and recommends?<br/><br/>**Enhancement:** Skipped<br/>**Tier 3/2/1:** Full review and recommendation"}
-    N{"**GATE: TAC Funding**<br/>Final Go/No-Go decision?<br/><br/>**Enhancement:** Skipped<br/>**Tier 3:** Consent agenda<br/>**Tier 2:** Sponsor presentation<br/>**Tier 1:** Executive presentation"}
+    M{"**GATE: Tech Subcommittee**<br/>Reviews, prioritizes, and recommends?<br/><br/>**Tier 3/2/1:** Full review and recommendation"}
+    N{"**GATE: TAC Funding**<br/>Final Go/No-Go decision?<br/><br/>**Tier 3:** Consent agenda<br/>**Tier 2:** Sponsor presentation<br/>**Tier 1:** Executive presentation"}
     O["✅ **ServiceNow Status: Completed**"]
-    P["**Handoff**<br/>───────────────────<br/>**Enhancement:** Team Kanban<br/>**Tier 3:** EPMO assigns PM, Project Charter<br/>**Tier 2:** Same as Tier 3<br/>**Tier 1:** Program Director chartered, program governance"]
+    P["**Handoff**<br/>───────────────────<br/>**Tier 3:** EPMO assigns PM, Project Charter<br/>**Tier 2:** Same as Tier 3<br/>**Tier 1:** Program Director chartered, program governance"]
     Z["End"]
 
     %% Define Connections
