@@ -1,6 +1,6 @@
-# Demand Management Workflow Visual
+# Demand Management Workflow Visual with Tier Gates
 
-This document contains a Mermaid diagram illustrating the consolidated demand management workflow for all project types. This version has been rewritten for improved compatibility and rendering.
+This document contains a Mermaid diagram illustrating the consolidated demand management workflow for all project types, including specific stage-gate requirements for each tier.
 
 ```mermaid
 flowchart TD
@@ -26,41 +26,32 @@ flowchart TD
     %% Define Node Text
     A["Start: Business Idea or Need"]
     B{"What is the nature of the work?"}
-    C["Handled by **Operational Incident Process**
-    Outside Demand Workflow"]
+    C["Handled by **Operational Incident Process**<br/>Outside Demand Workflow"]
     D["Submit Lightweight Demand"]
-    E{"Approved by
-    **Team or Business Unit Lead**?"}
-    F["Work added directly to
-    **Team Backlog or Kanban**"]
+    E{"**GATE: Team Lead Approval**<br/>Does this fit within enhancement budget?"}
+    F["Work added directly to<br/>**Team Backlog or Kanban**"]
     G["Demand Rejected or Revised"]
-    H["1. Draft and 2. Submitted"]
-    I["3. Screening"]
-    J{"Is demand viable, unique,
-    and correctly tiered?"}
-    K["4. Qualified"]
-    L["5. Approved"]
-    M{"1. Technology Subcommittee
-    Reviews and Recommends?"}
-    N{"2. Technology Advisory Committee TAC
-    Approves Funding?"}
-    O["6. Completed"]
-    P["Demand is converted to a formal Project
-    and handed off to **EPMO or Delivery Team**"]
+    H["**1. Draft and 2. Submitted**<br/>───────────────────<br/>**Enhancement:** 1-Page Form<br/>**Tier 3:** Standard Demand Record<br/>**Tier 2:** Standard Demand Record<br/>**Tier 1:** Program Brief/Strategic Charter"]
+    I["**3. Screening**<br/>───────────────────<br/>**Enhancement:** Skipped<br/>**Tier 3:** EPMO/EA - Form complete? Tier correct? Duplicate?<br/>**Tier 2:** EPMO/EA - Same as T3 + architectural conflicts<br/>**Tier 1:** EPMO/EA/Strategy - Same as T2 + strategic alignment"]
+    J{"**GATE: Screening Approval**<br/>Is demand viable, unique,<br/>and correctly tiered?"}
+    K["**4. Qualified**<br/>───────────────────<br/>**Enhancement:** Skipped<br/>**Tier 3:** Right-sized business case with ROI<br/>**Tier 2:** Formal business case + **Mandatory Architectural Review**<br/>**Tier 1:** Comprehensive program charter + multi-year plan"]
+    L["**5. Approved**<br/>───────────────────"]
+    M{"**GATE: Tech Subcommittee**<br/>Reviews, prioritizes, and recommends?<br/><br/>**Enhancement:** Skipped<br/>**Tier 3/2/1:** Full review and recommendation"}
+    N{"**GATE: TAC Funding**<br/>Final Go/No-Go decision?<br/><br/>**Enhancement:** Skipped<br/>**Tier 3:** Consent agenda<br/>**Tier 2:** Sponsor presentation<br/>**Tier 1:** Executive presentation"}
+    O["**6. Completed**"]
+    P["**Handoff**<br/>───────────────────<br/>**Enhancement:** Team Kanban<br/>**Tier 3:** EPMO assigns PM, Project Charter<br/>**Tier 2:** Same as Tier 3<br/>**Tier 1:** Program Director chartered, program governance"]
     Z["End"]
 
     %% Define Connections
     A --> B
 
-    B -->|Break-Fix| C
-    B -->|"**Enhancement**
-    e.g. less than 50k"| D
+    B -->|"**Break-Fix**<br/>N/A OpEx"| C
+    B -->|"**Enhancement**<br/>< $50k"| D
 
-    B -->|"**Project**
-    Tier 1, 2, or 3"| H
+    B -->|"**Project**<br/>Tier 1, 2, or 3"| H
 
     C --> Z
-    
+
     D --> E
     E -->|Yes| F
     E -->|No| G
@@ -68,23 +59,26 @@ flowchart TD
     G --> Z
 
     H --> I
-    I -->|"Triage by EPMO or EA"| J
+    I -->|"Triage by<br/>EPMO or EA"| J
     J -->|No| G
     J -->|Yes| K
-    K -->|"Business case and architectural
-    review are performed.
-    Rigor increases with each Tier."| L
-    
+    K -->|"Rigor increases<br/>with each Tier"| L
+
     L --> M
     M -->|No| G
     M -->|Yes| N
     N -->|No| G
     N -->|Yes| O
-    
+
     O --> P
     P --> Z
 
     %% Styling
     classDef governance fill:#cde4ff,stroke:#0050be,stroke-width:2px;
+    classDef gates fill:#ffe4cc,stroke:#ff8800,stroke-width:2px;
+    classDef stages fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+
     class L,M,N governance;
+    class E,J gates;
+    class H,I,K,O,P stages;
 ```
