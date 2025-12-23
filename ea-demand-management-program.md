@@ -60,7 +60,7 @@ Investment tiers are determined using a **two-dimensional matrix** that consider
 | Tier | Classification Criteria | Decision Authority | Cycle Time Target | Value Rigor |
 |------|----------------|-------------------|------------------|-------------|
 | **Enhancement** | <$50k + Low/Med complexity | Product Team Lead + DAR | 3 days | Lightweight value assessment |
-| **Tier 3** | $50k-$2M + Low complexity<br>OR $50k-$500k + Medium complexity | EPMO/EA + Tech Subcommittee | 7-12 days | Standard business case with ROI |
+| **Tier 3** | $50k-$2M + Low complexity<br>OR $50k-$500k + Medium complexity | EA/DAR + Tech Subcommittee | 7-12 days | Standard business case with ROI |
 | **Tier 2** | >$2M + Low complexity<br>OR $500k-$2M + Medium complexity<br>OR $50k-$500k + High complexity | EA + Tech Subcommittee + TAC | 14-21 days | Formal business case + architecture |
 | **Tier 1** | >$2M + Medium/High complexity<br>OR $500k-$2M + High complexity | EA + Executive Sponsors + TAC | 6-12 weeks | Comprehensive business case + multi-year plan |
 
@@ -194,7 +194,7 @@ Project complexity is assessed across multiple dimensions to ensure appropriate 
 
 #### Complexity Assessment During Intake
 
-Complexity is initially self-assessed by the demand submitter using guided questions in the intake form, then validated during the **Screening** phase by EPMO and EA/DAR. If complexity is re-classified during screening, the demand may be **re-tiered** accordingly.
+Complexity is initially self-assessed by the demand submitter using guided questions in the intake form, then validated during the **Screening** phase by EA/DAR. If complexity is re-classified during screening, the demand may be **re-tiered** accordingly.
 
 **Complexity Escalation Triggers:**
 - Integration requirements exceed initial scope
@@ -319,7 +319,7 @@ Tiers are assigned based on the **Project Tier Classification Matrix** (combinin
 
 **Objectives:**
 - Enable 3-day approval cycle for Enhancements
-- Reduce EA/EPMO burden on low-risk, low-complexity work
+- Reduce EA burden on low-risk, low-complexity work
 - Maintain architectural integrity through lightweight review
 - Create value discipline even at small investment scale
 - Build product team capability in value articulation
@@ -539,7 +539,7 @@ flowchart TD
 
 #### 3.1.3 Tier 3 Decision Gates
 
-**Gate 1: Screening (EPMO/EA)**
+**Gate 1: Screening (EA/DAR)**
 - **Purpose:** Verify demand is complete, correctly tiered, not duplicate, architecturally feasible
 - **Outcome:** Proceed to Qualification / Reject / Return for Revision
 - **Target:** 1-2 days
@@ -836,7 +836,7 @@ flowchart TD
 - [ ] Break-Fix or Incident (Route to Incident Management process - outside demand workflow)
 - [ ] Enhancement to existing system/process (<$50k expected)
 - [ ] Project or Initiative ($50k+ expected)
-- [ ] Not sure (Trigger intake consultation with PMO)
+- [ ] Not sure (Trigger intake consultation with EA)
 
 **Question 2: What is the estimated total investment?** (For Enhancement or Project)
 - [ ] Less than $50k
@@ -993,9 +993,9 @@ Upon submission, the EA team will:
 7. **Risks and Dependencies** (1 page)
 8. **Next Steps and Decision Requested** (1 page)
 
-**Guidance:** Tier 1 intake is NOT a web form. Requester downloads Program Brief template, completes with support from Strategy Office/PMO, and submits as formal document.
+**Guidance:** Tier 1 intake is NOT a web form. Requester downloads Program Brief template, completes with support from Strategy Office, and submits as formal document.
 
-**Submit Process:** Email submission to dedicated Tier 1 intake mailbox; EPMO/Strategy Office creates demand record and initiates Gate 0 review.
+**Submit Process:** Email submission to dedicated Tier 1 intake mailbox; EA/Strategy Office creates demand record and initiates Gate 0 review.
 
 ---
 
@@ -1023,9 +1023,9 @@ Upon submission, the EA team will:
 
 #### 4.4.2 Assisted Intake (For Tier 2 and Tier 1)
 
-**PMO Intake Consultation Service**
+**EA Intake Consultation Service**
 
-**What:** 30-60 minute consultation with PMO business analyst to help requester prepare intake submission
+**What:** 30-60 minute consultation with EA team member to help requester prepare intake submission
 
 **When Available:**
 - Tier 2: Optional but encouraged (improves quality and reduces rework)
@@ -1033,12 +1033,13 @@ Upon submission, the EA team will:
 
 **Consultation Topics:**
 - Tiering validation (is this really Tier 2, or could it be Tier 3?)
+- Complexity assessment guidance
 - Value articulation guidance
-- Cost estimation support
+- Architectural considerations and feasibility
 - Identification of stakeholders and dependencies
 - Intake form walkthrough
 
-**How to Request:** Self-service scheduling link; PMO assigns consultant based on domain
+**How to Request:** Self-service scheduling link; EA team assigns consultant based on domain and expertise
 
 ---
 
@@ -1078,7 +1079,7 @@ Upon submission, the EA team will:
 
 ---
 
-**Manual Screening (PMO/EPMO - first business day after submission)**
+**Manual Screening (EA team - first business day after submission)**
 
 **Screening Checklist:**
 - [ ] Is this the right tier? (Re-tier if necessary)
@@ -1128,7 +1129,7 @@ Upon submission, the EA team will:
 
 **Screening Time:** Same day or next business day
 
-**Screener:** Product Team Lead (for their team's requests) or PMO (if centralized intake)
+**Screener:** Product Team Lead (for their team's requests) or EA team (if centralized intake)
 
 **Common Rejection Reasons:**
 - This is a break-fix issue, not an enhancement (route to incident management)
@@ -1137,7 +1138,7 @@ Upon submission, the EA team will:
 
 ---
 
-#### 5.2.2 Tier 3 Screening (EPMO + EA/DAR)
+#### 5.2.2 Tier 3 Screening (EA/DAR)
 
 | Criterion | Pass | Clarify | Fail |
 |-----------|------|---------|------|
@@ -1153,9 +1154,9 @@ Upon submission, the EA team will:
 
 **Screening Time:** 1-2 business days
 
-**Screener:** EPMO (business/financial screening) + EA/DAR (technical screening)
+**Screener:** EA/DAR (business need, value, complexity, and architectural screening)
 
-**Screening Meeting:** EPMO and EA/DAR conduct joint 15-minute review of each new Tier 3 submission (daily or every other day depending on volume)
+**Screening Meeting:** EA/DAR conducts 15-minute review of each new Tier 3 submission (daily or every other day depending on volume)
 
 **Common Rejection Reasons:**
 - Duplicate of existing project
@@ -1166,7 +1167,7 @@ Upon submission, the EA team will:
 
 ---
 
-#### 5.2.3 Tier 2 Screening (EPMO + EA + Strategic Planning)
+#### 5.2.3 Tier 2 Screening (EA + Strategic Planning)
 
 | Criterion | Pass | Clarify | Fail |
 |-----------|------|---------|------|
@@ -1181,10 +1182,10 @@ Upon submission, the EA team will:
 
 **Screening Time:** 2-3 business days
 
-**Screener:** EPMO + EA + Strategic Planning Office (joint review)
+**Screener:** EA + Strategic Planning Office (joint review)
 
 **Screening Process:**
-1. **Individual Review:** Each party (EPMO, EA, Strategy) reviews submission independently (Day 1)
+1. **Individual Review:** Each party (EA, Strategy) reviews submission independently (Day 1)
 2. **Screening Meeting:** 30-minute joint meeting to discuss (Day 2)
 3. **Decision and Feedback:** Consensus decision; feedback to requester if clarification or rejection (Day 2-3)
 
@@ -1336,7 +1337,7 @@ The EA team facilitates qualification through a comprehensive interview process,
 2. **Identify Participants:** Business Sponsor + Executive Sponsor + key SMEs + EA + Strategic Planning + Finance (optional) + PMO (optional)
 3. **Prepare Interview Guide:** EA team customizes detailed interview questions based on initial submission and strategic context
 4. **Pre-read Materials:** Participants review initial submission, relevant strategic plans, and any supporting documents
-5. **Assign Support Resources:** PMO assigns business analyst; Finance assigns FP&A analyst (if financial modeling needed)
+5. **Coordinate Support Resources:** EA coordinates with EPMO for business analyst support (if needed); Finance assigns FP&A analyst (if financial modeling needed)
 
 **Participant Preparation:** Sponsors receive detailed prep guide with strategic and financial questions
 
@@ -1392,7 +1393,7 @@ The EA team facilitates qualification through a comprehensive interview process,
 
 2. **Develop Formal Business Case** (Days 7-10)
    - **EA team** drafts Tier 2 Business Case (15-20 pages) using template
-   - **PMO business analyst** develops detailed project plan and resource estimates
+   - **EA team** coordinates with EPMO for project planning and resource estimate support (if needed)
    - **Finance analyst** builds financial model (NPV, IRR, payback, sensitivity analysis)
    - **EA architect** performs architecture review and creates architecture assessment
    - All sections incorporate interview insights and add professional analysis
@@ -1404,7 +1405,7 @@ The EA team facilitates qualification through a comprehensive interview process,
 4. **Stakeholder Validation** (Days 9-10)
    - EA coordinates with sponsor to validate key assumptions
    - Finance validates financial model with sponsor and budget owners
-   - PMO validates resource and timeline feasibility
+   - EA validates resource and timeline feasibility (with EPMO input if needed)
 
 5. **Draft Review with Sponsor** (Day 11)
    - EA shares complete draft with sponsor for review
@@ -1412,12 +1413,12 @@ The EA team facilitates qualification through a comprehensive interview process,
 
 6. **Finalize Documentation** (Day 12)
    - EA team incorporates sponsor feedback
-   - PMO, Finance, and EA perform quality review
+   - EA, Finance, and Strategic Planning perform quality review
    - Final business case and architecture review report completed
 
 **EA Team Time Investment:** 8-12 hours per Tier 2 demand (interview prep, facilitation, documentation, coordination)
 
-**PMO Time Investment:** 4-6 hours (project planning, resource analysis)
+**EPMO Support (if requested):** 4-6 hours (project planning support, resource analysis)
 
 **Finance Time Investment:** 3-5 hours (financial modeling, validation)
 
@@ -1890,7 +1891,7 @@ For each benefit:
 ```mermaid
 flowchart TD
     Start[Business Need or Opportunity Identified] --> Intake[Intake Submission<br/>Tier-Appropriate Form]
-    Intake --> Screen{Screening<br/>EPMO/EA/DAR}
+    Intake --> Screen{Screening<br/>EA/DAR}
     Screen -->|Pass| Qualify[Qualification<br/>Business Case Development]
     Screen -->|Clarify| Intake
     Screen -->|Reject| End1[Rejected - Feedback Provided]
@@ -1968,7 +1969,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A[Submit Tier 3<br/>Intake Form] --> B[Gate 1:<br/>Screening<br/>EPMO + EA/DAR]
+    A[Submit Tier 3<br/>Intake Form] --> B[Gate 1:<br/>Screening<br/>EA/DAR]
     B -->|Pass| C[Qualification:<br/>Business Case Dev]
     B -->|Clarify| A
     B -->|Reject| Z1[Rejected]
@@ -1990,7 +1991,7 @@ flowchart LR
 ```
 
 **Gate 1: Screening**
-- **Decision Maker:** EPMO + EA/DAR
+- **Decision Maker:** EA/DAR
 - **Criteria:** Complete submission; clear business need; value articulated; architecturally feasible; correct tier; not duplicate
 - **Cycle Time:** 1-2 days
 - **Outcome:** Proceed to Qualification / Clarify / Reject
@@ -2021,7 +2022,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A[Submit Tier 2<br/>Intake Form] --> B[Gate 1:<br/>Pre-Screening<br/>EA + Strategy + EPMO]
+    A[Submit Tier 2<br/>Intake Form] --> B[Gate 1:<br/>Pre-Screening<br/>EA + Strategy]
     B -->|Proceed| C[Qualification:<br/>Formal Business Case]
     B -->|Table| Z2[Tabled]
     B -->|Reject| Z1[Rejected]
@@ -2043,7 +2044,7 @@ flowchart LR
 ```
 
 **Gate 1: Pre-Screening**
-- **Decision Maker:** EA + Strategic Planning + EPMO
+- **Decision Maker:** EA + Strategic Planning
 - **Criteria:** Strategic alignment; executive sponsor committed; right timing; feasible; ready for business case investment
 - **Cycle Time:** 2-3 days
 - **Outcome:** Proceed / Table for Future / Reject
@@ -2546,7 +2547,7 @@ The EA team cannot manage every demand submission individually. The following mo
 
 | Decision | Enhancement | Tier 3 | Tier 2 | Tier 1 |
 |----------|-------------|--------|--------|--------|
-| **Intake Acceptance** | Team Lead / PMO | EPMO + EA/DAR | EPMO + EA + Strategy | Strategy + CIO (Gate 0) |
+| **Intake Acceptance** | Team Lead / EA team | EA/DAR | EA + Strategy | EA + Strategy + CIO (Gate 0) |
 | **Architecture Approval** | DAR (if req) or N/A | DAR (standard) or EA (escalated) | EA Team (mandatory) | EA Team + CIO (mandatory) |
 | **Business Case Approval** | Team Lead | Tech Sub (recommend) → TAC (approve) | Tech Sub (recommend) → TAC (approve) | Tech Sub (recommend) → TAC (approve) → Board (if req) |
 | **Funding Authorization** | Team Lead (within budget) | TAC | TAC | TAC → Board (if >$10M) |
@@ -2584,11 +2585,13 @@ graph TD
     ProductTeam[Product Team Leads<br/>Daily/Weekly] -->|Enhancement Decisions| EnhPortfolio[Enhancement Portfolio]
     DAR[Domain Architecture Reviewers<br/>Federated] -->|Technical Review| ProductTeam
     DAR -->|Technical Review| TechSub
-    EA[Enterprise Architecture<br/>Centralized] -->|Architecture Governance| TechSub
+    DAR -->|Tier 3 Qualification| Demands
+    EA[Enterprise Architecture<br/>Centralized] -->|Demand Management| Demands
+    EA -->|Architecture Governance| TechSub
     EA -->|Standards & Oversight| DAR
 
-    PMO[PMO / EPMO] -->|Intake & Screening| Demands
-    PMO -->|Intake Support| EnhPortfolio
+    PMO[PMO / EPMO] -->|Execution Support| Demands
+    PMO -->|Project Delivery| ApprovedProjects[Approved Projects]
     PMO -->|Portfolio Reporting| TechSub
     PMO -->|Portfolio Reporting| TAC
 
@@ -3018,7 +3021,7 @@ If unresolved → Escalate to CEO / Board
 **Business Sponsors:**
 - Message: "We're helping you articulate and demonstrate the value of your investments"
 - Communication: Sponsor onboarding sessions, business case development support
-- Engagement: PMO partnership, templates and tools, intake consultation
+- Engagement: EA partnership, templates and tools, intake consultation
 
 **Product Team Leads:**
 - Message: "You have more autonomy and speed on small investments, with clear value guardrails"
@@ -3189,7 +3192,7 @@ These templates are available in the Intake Resource Center (SharePoint/Confluen
 - **Business Case:** Documented justification for an investment demonstrating value and feasibility
 - **DAR (Domain Architecture Reviewer):** Federated architecture reviewer embedded in business domain
 - **Enhancement:** Small investment (<$50k) improving existing system/process
-- **EPMO (Enterprise Project Management Office):** Centralized PMO function managing demand and projects
+- **EPMO (Enterprise Project Management Office):** Centralized PMO function managing project delivery, execution, and value realization
 - **Gate:** Formal decision point in demand management process
 - **Intake:** Initial submission of demand request
 - **NPV (Net Present Value):** Financial metric; present value of future cash flows
