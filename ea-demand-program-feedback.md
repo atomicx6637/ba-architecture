@@ -1,7 +1,7 @@
 # Feedback on Value-Based Demand Engagement Program
 ## Stakeholder Review - December 2025
 
-**Program Document Reviewed:** `ea-demanding-management-program.md`
+**Program Document Reviewed:** `ea-demand-management-program.md`
 **Review Date:** December 22, 2025
 **Reviewers:** Skeptical Utility Veteran, Utility Developer/Demand Manager
 
